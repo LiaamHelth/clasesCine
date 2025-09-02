@@ -1,0 +1,58 @@
+package com.cine.modelo;
+
+public class Horario {
+    private String fecha;
+    private String lugar;
+    private String horarioInicio;
+    private String duracion;
+
+    public Horario(String fecha, String lugar, String horarioInicio, String duracion) {
+        this.fecha = fecha;
+        this.lugar = lugar;
+        this.horarioInicio = horarioInicio;
+        this.duracion = duracion;
+    }
+
+    // Getters y Setters
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+
+    public String getHorarioInicio() {
+        return horarioInicio;
+    }
+
+    public void setHorarioInicio(String horarioInicio) {
+        this.horarioInicio = horarioInicio;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+    @Override
+    public String toString() {
+        return "Horario{" +
+                "fecha='" + fecha + '\'' +
+                ", lugar='" + lugar + '\'' +
+                ", horarioInicio='" + horarioInicio + '\'' +
+                ", duracion='" + duracion + '\'' +
+                '}';
+    }
+}
