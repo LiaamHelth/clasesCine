@@ -1,0 +1,49 @@
+package com.cine.modelo;
+
+import java.util.Date;
+
+public class Entrada {
+    private Date fecha;
+    private String hora;
+    private String pelicula;
+
+    public Entrada(Date fecha, String hora, String pelicula) {
+        this.fecha = fecha;
+        this.hora = hora;
+        this.pelicula = pelicula;
+    }
+
+    // Getters y Setters
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public String getPelicula() {
+        return pelicula;
+    }
+
+    public void setPelicula(String pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    @Override
+    public String toString() {
+        return "Entrada{" +
+                "fecha=" + fecha +
+                ", hora='" + hora + '\'' +
+                ", pelicula='" + pelicula + '\'' +
+                '}';
+    }
+}
