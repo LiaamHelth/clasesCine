@@ -1,0 +1,36 @@
+package com.cine.modelo;
+
+public class Asiento {
+    private String lugar;
+    private String cliente;
+
+    public Asiento(String lugar, String cliente) {
+        this.lugar = lugar;
+        this.cliente = cliente;
+    }
+
+    // Getters y Setters
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    @Override
+    public String toString() {
+        return "Asiento{" +
+                "lugar='" + lugar + '\'' +
+                ", cliente='" + cliente + '\'' +
+                '}';
+    }
+}
